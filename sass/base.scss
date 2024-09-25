@@ -1,0 +1,16 @@
+// Base styles with nested selectors
+body {
+    font-family: $font-stack;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      &:hover {
+        color: darken-color($primary-color, 20%);
+      }
+    }
+  }
+  

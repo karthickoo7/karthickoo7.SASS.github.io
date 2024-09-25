@@ -1,0 +1,16 @@
+// Create mixins for responsive design
+@mixin respond($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    }
+  }
+  
+  // Mixin for center alignment
+  @mixin center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

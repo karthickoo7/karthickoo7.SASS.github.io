@@ -1,0 +1,38 @@
+// Layout styles with loops and responsive design
+.header, .footer {
+    @include center-align;
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+  
+    @include respond('medium') {
+      padding: 40px;
+    }
+  }
+  
+  .navbar {
+    ul {
+      list-style: none;
+      display: flex;
+  
+      li {
+        margin-right: 20px;
+      }
+  
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  
+  // Loop through breakpoints to create responsive grid
+  @for $i from 1 through 4 {
+    .col-#{$i} {
+      width: (100% / 4) * $i;
+  
+      @include respond('medium') {
+        width: (100% / 12) * $i;
+      }
+    }
+  }
+  

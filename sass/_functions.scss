@@ -1,0 +1,5 @@
+// SASS function to darken colors
+@function darken-color($color, $amount: 10%) {
+    @return darken($color, $amount);
+  }
+  

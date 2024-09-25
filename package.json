@@ -1,0 +1,14 @@
+{
+    "name": "food-advertising",
+    "version": "1.0.0",
+    "description": "A food advertising website with SASS styling",
+    "main": "index.js",
+    "scripts": {
+      "build-css": "sass --watch sass/main.scss:css/style.css --source-map"
+    },
+    "devDependencies": {
+      "sass": "^1.32.8"
+    },
+    "author": "MK",
+    "license": "ISC"
+  }

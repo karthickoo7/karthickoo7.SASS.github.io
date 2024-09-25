@@ -1,0 +1,17 @@
+// Components like buttons
+.button-primary {
+    @extend %button-style;
+    background-color: $primary-color;
+    &:hover {
+      background-color: darken-color($primary-color, 10%);
+    }
+  }
+  
+  .button-secondary {
+    @extend %button-style;
+    background-color: $secondary-color;
+    &:hover {
+      background-color: darken-color($secondary-color, 10%);
+    }
+  }
+  
