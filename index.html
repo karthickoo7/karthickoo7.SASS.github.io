@@ -3,15 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Advertising Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Food Advertising</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .food-item {
+            flex: 1 1 calc(33% - 40px);
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .food-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .food-item h3 {
+            text-align: center;
+            padding: 15px;
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .food-item:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
-    <header class="header">
-        <h1>Delicious Food Delivered</h1>
+    <header>
+        <h1>Delicious Foods Around the World</h1>
+        <p>Explore a variety of cuisines from different cultures</p>
     </header>
-
     <nav class="navbar">
         <ul>
             <li><a href="#">Home</a></li>
@@ -28,8 +85,42 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <p>© 2024 Foodies Inc.</p>
+    <div class="container">
+
+        <div class="food-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvD5otUq9venT-lOpmEXZimhcw8n0cjePfSw&s"alt="Pizza">
+            <h3>Italian Pizza</h3>
+        </div>
+
+        <div class="food-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3GBF0o7H-qh44ye2PxRmN81MWk_cRk-JMhw&s" lt="Sushi">
+            <h3>Japanese Sushi</h3>
+        </div>
+
+        <div class="food-item">
+            <img src="https://feelgoodfoodie.net/wp-content/uploads/2019/07/Mexican-Street-Tacos-TIMG-500x375.jpg" alt="Tacos">
+            <h3>Mexican Tacos</h3>
+        </div>
+
+        <div class="food-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR43S9C8WGETy8f8eDlBMMHxkF4kUmHlxvWQ&s"alt=Burger">
+            <h3>American Burger</h3>
+        </div>
+
+        <div class="food-item">
+            <img src="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_700/MTc0MTU4MjQxMTA5Mzg3MTMy/a-step-by-step-guide-to-cooking-an-authentic-indian-curry.webp" alt="Curry">
+           <h3>Indian Curry</h3>
+        </div>
+
+        <div class="food-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRzXvtW1LN1CgVbEbv3q_408iytJcNs10KLw&s"alt="Dumplings">
+            <h3>Chinese Dumplings</h3>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2024 Food Advertising. All rights reserved.</p>
     </footer>
 
 </body>
